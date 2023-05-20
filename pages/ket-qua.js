@@ -20,13 +20,13 @@ const KetQua = (props) => {
             height={105}
           />
           <div
-            data-role="Nav"
             data-thq="thq-navbar-nav"
+            data-role="Nav"
             className="ket-qua-desktop-menu"
           >
             <nav
-              data-role="Nav"
               data-thq="thq-navbar-nav-links"
+              data-role="Nav"
               className="ket-qua-nav"
             >
               <Link href="/bau-hdqt">
@@ -55,8 +55,8 @@ const KetQua = (props) => {
           </div>
           <div data-thq="thq-mobile-menu" className="ket-qua-mobile-menu">
             <div
-              data-role="Nav"
               data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
               className="ket-qua-nav1"
             >
               <div className="ket-qua-container01">
@@ -72,14 +72,22 @@ const KetQua = (props) => {
                 </div>
               </div>
               <nav
-                data-role="Nav"
                 data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
                 className="ket-qua-nav2"
               >
-                <span className="ket-qua-text">Bầu HĐQT</span>
-                <span className="ket-qua-text01">Bầu BKS</span>
-                <span className="ket-qua-text02">Biểu Quyết</span>
-                <span className="ket-qua-text03">Kết Quả</span>
+                <Link href="/bau-hdqt">
+                  <a className="ket-qua-link05">Bầu HĐQT</a>
+                </Link>
+                <Link href="/bau-bks">
+                  <a className="ket-qua-link06">Bầu BKS</a>
+                </Link>
+                <Link href="/bieu-quyet">
+                  <a className="ket-qua-link07">Biểu Quyết</a>
+                </Link>
+                <Link href="/ket-qua">
+                  <a className="ket-qua-link08">Kết Quả</a>
+                </Link>
               </nav>
               <div className="ket-qua-container02">
                 <button className="ket-qua-login1 button">Đăng Nhập</button>
@@ -116,7 +124,7 @@ const KetQua = (props) => {
                 className="ket-qua-image01"
               />
               <div className="ket-qua-container04">
-                <label className="ket-qua-text04">BAN KIỂM SOÁT</label>
+                <label className="ket-qua-text">BAN KIỂM SOÁT</label>
                 <div className="ket-qua-container05">
                   <form className="ket-qua-form">
                     <img
@@ -162,7 +170,7 @@ const KetQua = (props) => {
                 className="ket-qua-image05"
               />
               <div className="ket-qua-container08">
-                <label className="ket-qua-text08">HỘI ĐỒNG QUẢN TRỊ</label>
+                <label className="ket-qua-text04">HỘI ĐỒNG QUẢN TRỊ</label>
                 <div className="ket-qua-container09">
                   <div className="ket-qua-container10">
                     <form className="ket-qua-form06">
@@ -250,7 +258,7 @@ const KetQua = (props) => {
                 className="ket-qua-image12"
               />
               <div className="ket-qua-container18">
-                <label className="ket-qua-text15">BIỂU QUYẾT</label>
+                <label className="ket-qua-text11">BIỂU QUYẾT</label>
                 <div className="ket-qua-container19">
                   <div className="ket-qua-container20">
                     <form className="ket-qua-form18">
@@ -340,112 +348,55 @@ const KetQua = (props) => {
                 alt="logo"
                 src="/playground_assets/logo-hsg-200h.png"
                 className="ket-qua-image19"
-                width={84}
-                height={84}
+                width={121}
+                height={121}
               />
-              <span className="ket-qua-text22">
-                <span>Công ty cổ phần Tập Đoàn Hoa Sen</span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
+              <span className="ket-qua-text18">
+                Công ty cổ phần Tập đoàn Hoa Sen
               </span>
             </div>
             <div className="ket-qua-links-container">
               <div className="ket-qua-container29">
                 <div className="ket-qua-product-container">
-                  <span className="ket-qua-text26">TRANG</span>
+                  <span className="ket-qua-text19">TRANG</span>
                   <Link href="/bau-hdqt">
-                    <a className="ket-qua-link05">Bầu HĐQT</a>
+                    <a className="ket-qua-link09">Bầu HĐQT</a>
                   </Link>
                   <Link href="/bau-bks">
-                    <a className="ket-qua-link06">Bầu BKS</a>
+                    <a className="ket-qua-link10">Bầu BKS</a>
                   </Link>
                   <Link href="/bieu-quyet">
-                    <a className="ket-qua-link07">Biểu quyết</a>
+                    <a className="ket-qua-link11">Biểu quyết</a>
                   </Link>
                   <Link href="/ket-qua">
-                    <a className="ket-qua-link08">Kết quả</a>
+                    <a className="ket-qua-link12">Kết quả</a>
                   </Link>
                 </div>
                 <div className="ket-qua-company-container">
-                  <span className="ket-qua-text27">LIÊN KẾT</span>
-                  <a
-                    href="https://nhuahoasen.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="ket-qua-link09"
-                  >
-                    Nhựa hoa sen
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="ket-qua-link10"
-                  >
-                    Việt Nam Steel
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="ket-qua-link11"
-                  >
-                    Hoa sen Home
-                  </a>
+                  <span className="ket-qua-text20">LIÊN KẾT</span>
+                  <span className="ket-qua-text21">Nhựa Hoa Sen</span>
+                  <span className="ket-qua-text22">Việt Nam Steel</span>
+                  <span className="ket-qua-text23">Hoa Sen Home</span>
                 </div>
               </div>
               <div className="ket-qua-container30">
                 <div className="ket-qua-contact">
-                  <span className="ket-qua-text28">LIÊN HỆ</span>
-                  <span className="ket-qua-text29">cskh@hoasengroup.vn</span>
-                  <span>(028) 39990 111</span>
+                  <span className="ket-qua-text24">LIÊN HỆ</span>
+                  <span className="ket-qua-text25">cskh@hoasengroup.vn</span>
+                  <span className="ket-qua-text26">(028) 39990 111</span>
                 </div>
                 <div className="ket-qua-socials">
-                  <span className="ket-qua-text31">THEO DÕI</span>
+                  <span className="ket-qua-text27">THEO DÕI</span>
                   <div className="ket-qua-icon-group1">
-                    <a
-                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="ket-qua-link12"
-                    >
-                      <svg viewBox="0 0 1024 1024" className="ket-qua-icon10">
-                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://zalo.me/2867298229687548991"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="ket-qua-link13"
-                    >
-                      <img
-                        alt="image"
-                        src="/playground_assets/icons8-zalo-50-200h.png"
-                        className="ket-qua-image20"
-                      />
-                    </a>
                     <a
                       href="https://www.facebook.com/hoasengroup.vn"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="ket-qua-link14"
+                      className="ket-qua-link13"
                     >
                       <svg
                         viewBox="0 0 602.2582857142856 1024"
-                        className="ket-qua-icon12"
+                        className="ket-qua-icon10"
                       >
                         <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                       </svg>
@@ -454,13 +405,35 @@ const KetQua = (props) => {
                       href="https://www.tiktok.com/@hoasenhome.vn"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="ket-qua-link15"
+                      className="ket-qua-link14"
                     >
                       <img
                         alt="image"
                         src="/playground_assets/tik-tok-200h.png"
+                        className="ket-qua-image20"
+                      />
+                    </a>
+                    <a
+                      href="https://zalo.me/2867298229687548991"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="ket-qua-link15"
+                    >
+                      <img
+                        alt="image"
+                        src="/playground_assets/icons8-zalo-50-200h.png"
                         className="ket-qua-image21"
                       />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="ket-qua-link16"
+                    >
+                      <svg viewBox="0 0 1024 1024" className="ket-qua-icon12">
+                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -468,7 +441,7 @@ const KetQua = (props) => {
             </div>
           </div>
           <div className="ket-qua-separator"></div>
-          <span className="ket-qua-text32">
+          <span className="ket-qua-text28">
             © 2023 HOA SEN GROUP, All Rights Reserved.
           </span>
         </footer>
@@ -591,17 +564,21 @@ const KetQua = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .ket-qua-text {
+          .ket-qua-link05 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .ket-qua-text01 {
+          .ket-qua-link06 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .ket-qua-text02 {
+          .ket-qua-link07 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .ket-qua-text03 {
+          .ket-qua-link08 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
           .ket-qua-container02 {
             flex: 0 0 auto;
@@ -682,7 +659,7 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text04 {
+          .ket-qua-text {
             font-style: normal;
             font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
@@ -795,7 +772,7 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text08 {
+          .ket-qua-text04 {
             font-style: normal;
             font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
@@ -1007,7 +984,7 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text15 {
+          .ket-qua-text11 {
             font-style: normal;
             font-weight: 700;
             margin-bottom: var(--dl-space-space-halfunit);
@@ -1190,6 +1167,7 @@ const KetQua = (props) => {
             width: 100%;
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
+            box-shadow: 5px 5px 10px 0px #d4d4d4;
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
             padding-left: var(--dl-space-space-threeunits);
@@ -1212,10 +1190,10 @@ const KetQua = (props) => {
             flex-direction: column;
           }
           .ket-qua-image19 {
-            width: 84px;
-            height: 84px;
+            width: 121px;
+            height: 121px;
           }
-          .ket-qua-text22 {
+          .ket-qua-text18 {
             margin-top: var(--dl-space-space-oneandhalfunits);
           }
           .ket-qua-links-container {
@@ -1239,23 +1217,27 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text26 {
+          .ket-qua-text19 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .ket-qua-link05 {
+          .ket-qua-link09 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .ket-qua-link06 {
+          .ket-qua-link10 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .ket-qua-link07 {
+          .ket-qua-link11 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .ket-qua-link08 {
+          .ket-qua-link12 {
+            font-size: 14px;
             text-decoration: none;
           }
           .ket-qua-company-container {
@@ -1265,21 +1247,21 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text27 {
+          .ket-qua-text20 {
             font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .ket-qua-link09 {
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .ket-qua-link10 {
+          .ket-qua-text21 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .ket-qua-link11 {
+          .ket-qua-text22 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
+          }
+          .ket-qua-text23 {
+            font-size: 14px;
+            margin-bottom: var(--dl-space-space-unit);
           }
           .ket-qua-container30 {
             display: flex;
@@ -1294,12 +1276,16 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text28 {
+          .ket-qua-text24 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .ket-qua-text29 {
+          .ket-qua-text25 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
+          }
+          .ket-qua-text26 {
+            font-size: 14px;
           }
           .ket-qua-socials {
             display: flex;
@@ -1307,7 +1293,7 @@ const KetQua = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .ket-qua-text31 {
+          .ket-qua-text27 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
@@ -1317,7 +1303,7 @@ const KetQua = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .ket-qua-link12 {
+          .ket-qua-link13 {
             display: contents;
           }
           .ket-qua-icon10 {
@@ -1326,22 +1312,13 @@ const KetQua = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .ket-qua-link13 {
+          .ket-qua-link14 {
             display: contents;
           }
           .ket-qua-image20 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
             object-fit: cover;
-            margin-right: var(--dl-space-space-unit);
-            text-decoration: none;
-          }
-          .ket-qua-link14 {
-            display: contents;
-          }
-          .ket-qua-icon12 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
@@ -1352,6 +1329,15 @@ const KetQua = (props) => {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
             object-fit: cover;
+            margin-right: var(--dl-space-space-unit);
+            text-decoration: none;
+          }
+          .ket-qua-link16 {
+            display: contents;
+          }
+          .ket-qua-icon12 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
             text-decoration: none;
           }
           .ket-qua-separator {
@@ -1361,7 +1347,7 @@ const KetQua = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-900);
           }
-          .ket-qua-text32 {
+          .ket-qua-text28 {
             align-self: center;
           }
           @media (max-width: 991px) {
@@ -1386,7 +1372,6 @@ const KetQua = (props) => {
             }
             .ket-qua-pricing-card2 {
               width: 538px;
-              height: 36px;
               max-width: 100%;
               align-items: center;
               padding-top: var(--dl-space-space-twounits);
@@ -1469,7 +1454,7 @@ const KetQua = (props) => {
             .ket-qua-image19 {
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .ket-qua-text22 {
+            .ket-qua-text18 {
               margin-top: var(--dl-space-space-twounits);
               text-align: center;
               margin-bottom: var(--dl-space-space-twounits);
@@ -1513,7 +1498,7 @@ const KetQua = (props) => {
             .ket-qua-image19 {
               margin-bottom: 0px;
             }
-            .ket-qua-text22 {
+            .ket-qua-text18 {
               margin-top: var(--dl-space-space-twounits);
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -1533,7 +1518,7 @@ const KetQua = (props) => {
               align-items: flex-start;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .ket-qua-text32 {
+            .ket-qua-text28 {
               text-align: center;
             }
           }

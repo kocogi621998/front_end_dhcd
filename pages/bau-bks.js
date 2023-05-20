@@ -20,13 +20,13 @@ const BauBKS = (props) => {
             height={105}
           />
           <div
-            data-role="Nav"
             data-thq="thq-navbar-nav"
+            data-role="Nav"
             className="bau-bks-desktop-menu"
           >
             <nav
-              data-role="Nav"
               data-thq="thq-navbar-nav-links"
+              data-role="Nav"
               className="bau-bks-nav"
             >
               <Link href="/bau-hdqt">
@@ -55,8 +55,8 @@ const BauBKS = (props) => {
           </div>
           <div data-thq="thq-mobile-menu" className="bau-bks-mobile-menu">
             <div
-              data-role="Nav"
               data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
               className="bau-bks-nav1"
             >
               <div className="bau-bks-container01">
@@ -72,17 +72,27 @@ const BauBKS = (props) => {
                 </div>
               </div>
               <nav
-                data-role="Nav"
                 data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
                 className="bau-bks-nav2"
               >
-                <span className="bau-bks-text">Bầu HĐQT</span>
-                <span className="bau-bks-text01">Bầu BKS</span>
-                <span className="bau-bks-text02">Biểu Quyết</span>
-                <span className="bau-bks-text03">Kết Quả</span>
+                <Link href="/bau-hdqt">
+                  <a className="bau-bks-link05">Bầu HĐQT</a>
+                </Link>
+                <Link href="/bau-bks">
+                  <a className="bau-bks-link06">Bầu BKS</a>
+                </Link>
+                <Link href="/bieu-quyet">
+                  <a className="bau-bks-link07">Biểu Quyết</a>
+                </Link>
+                <Link href="/ket-qua">
+                  <a className="bau-bks-link08">Kết Quả</a>
+                </Link>
               </nav>
               <div className="bau-bks-container02">
-                <button className="bau-bks-login1 button">Đăng Nhập</button>
+                <Link href="/logn">
+                  <a className="bau-bks-link09 button">Đăng Nhập</a>
+                </Link>
               </div>
             </div>
             <div className="bau-bks-icon-group">
@@ -110,20 +120,20 @@ const BauBKS = (props) => {
         <div className="bau-bks-pricing">
           <div className="bau-bks-container03">
             <div className="bau-bks-pricing-card">
-              <span className="bau-bks-text04">BẦU HỘI ĐỒNG QUẢN TRỊ</span>
+              <span className="bau-bks-text">BẦU HỘI ĐỒNG QUẢN TRỊ</span>
               <div className="bau-bks-container04">
                 <div className="bau-bks-container05">
                   <input type="checkbox" checked="true" />
-                  <label className="bau-bks-text05">Chia đều</label>
-                  <label className="bau-bks-text06">Số cổ phần:</label>
-                  <span>0</span>
+                  <label className="bau-bks-text01">Chia đều</label>
+                  <label className="bau-bks-text02">Số cổ phần:</label>
+                  <span className="bau-bks-text03">0</span>
                 </div>
                 <div className="bau-bks-container06">
                   <form className="bau-bks-form">
-                    <label>1.</label>
+                    <label className="bau-bks-text04">1.</label>
                   </form>
                   <form className="bau-bks-form01">
-                    <span>ứng cử viên 1</span>
+                    <span className="bau-bks-text05">ứng cử viên 1</span>
                   </form>
                   <form className="bau-bks-form02">
                     <input type="text" className="bau-bks-textinput input" />
@@ -131,10 +141,10 @@ const BauBKS = (props) => {
                 </div>
                 <div className="bau-bks-container07">
                   <form className="bau-bks-form03">
-                    <label>2.</label>
+                    <label className="bau-bks-text06">2.</label>
                   </form>
                   <form className="bau-bks-form04">
-                    <span>ứng cử viên 1</span>
+                    <span className="bau-bks-text07">ứng cử viên 1</span>
                   </form>
                   <form className="bau-bks-form05">
                     <input type="text" className="bau-bks-textinput1 input" />
@@ -142,10 +152,10 @@ const BauBKS = (props) => {
                 </div>
                 <div className="bau-bks-container08">
                   <form className="bau-bks-form06">
-                    <label>3.</label>
+                    <label className="bau-bks-text08">3.</label>
                   </form>
                   <form className="bau-bks-form07">
-                    <span>ứng cử viên 1</span>
+                    <span className="bau-bks-text09">ứng cử viên 1</span>
                   </form>
                   <form className="bau-bks-form08">
                     <input type="text" className="bau-bks-textinput2 input" />
@@ -153,10 +163,10 @@ const BauBKS = (props) => {
                 </div>
                 <div className="bau-bks-container09">
                   <form className="bau-bks-form09">
-                    <label>4.</label>
+                    <label className="bau-bks-text10">4.</label>
                   </form>
                   <form className="bau-bks-form10">
-                    <span>ứng cử viên 1</span>
+                    <span className="bau-bks-text11">ứng cử viên 1</span>
                   </form>
                   <form className="bau-bks-form11">
                     <input type="text" className="bau-bks-textinput3 input" />
@@ -164,10 +174,10 @@ const BauBKS = (props) => {
                 </div>
                 <div className="bau-bks-container10">
                   <form className="bau-bks-form12">
-                    <label>5.</label>
+                    <label className="bau-bks-text12">5.</label>
                   </form>
                   <form className="bau-bks-form13">
-                    <span>ứng cử viên 1</span>
+                    <span className="bau-bks-text13">ứng cử viên 1</span>
                   </form>
                   <form className="bau-bks-form14">
                     <input type="text" className="bau-bks-textinput4 input" />
@@ -175,10 +185,10 @@ const BauBKS = (props) => {
                 </div>
                 <div className="bau-bks-container11">
                   <form className="bau-bks-form15">
-                    <label>6.</label>
+                    <label className="bau-bks-text14">6.</label>
                   </form>
                   <form className="bau-bks-form16">
-                    <span>ứng cử viên 1</span>
+                    <span className="bau-bks-text15">ứng cử viên 1</span>
                   </form>
                   <form className="bau-bks-form17">
                     <input type="text" className="bau-bks-textinput5 input" />
@@ -198,103 +208,46 @@ const BauBKS = (props) => {
                 alt="logo"
                 src="/playground_assets/logo-hsg-200h.png"
                 className="bau-bks-image1"
-                width={84}
-                height={84}
+                width={121}
+                height={121}
               />
-              <span className="bau-bks-text20">
-                <span>Công ty cổ phần Tập Đoàn Hoa Sen</span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
+              <span className="bau-bks-text16">
+                Công ty cổ phần Tập đoàn Hoa Sen
               </span>
             </div>
             <div className="bau-bks-links-container">
               <div className="bau-bks-container13">
                 <div className="bau-bks-product-container">
-                  <span className="bau-bks-text24">TRANG</span>
+                  <span className="bau-bks-text17">TRANG</span>
                   <Link href="/bau-hdqt">
-                    <a className="bau-bks-link05">Bầu HĐQT</a>
+                    <a className="bau-bks-link10">Bầu HĐQT</a>
                   </Link>
                   <Link href="/bau-bks">
-                    <a className="bau-bks-link06">Bầu BKS</a>
+                    <a className="bau-bks-link11">Bầu BKS</a>
                   </Link>
                   <Link href="/bieu-quyet">
-                    <a className="bau-bks-link07">Biểu quyết</a>
+                    <a className="bau-bks-link12">Biểu quyết</a>
                   </Link>
                   <Link href="/ket-qua">
-                    <a className="bau-bks-link08">Kết quả</a>
+                    <a className="bau-bks-link13">Kết quả</a>
                   </Link>
                 </div>
                 <div className="bau-bks-company-container">
-                  <span className="bau-bks-text25">LIÊN KẾT</span>
-                  <a
-                    href="https://nhuahoasen.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bau-bks-link09"
-                  >
-                    Nhựa hoa sen
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bau-bks-link10"
-                  >
-                    Việt Nam Steel
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bau-bks-link11"
-                  >
-                    Hoa sen Home
-                  </a>
+                  <span className="bau-bks-text18">LIÊN KẾT</span>
+                  <span className="bau-bks-text19">Nhựa Hoa Sen</span>
+                  <span className="bau-bks-text20">Việt Nam Steel</span>
+                  <span className="bau-bks-text21">Hoa Sen Home</span>
                 </div>
               </div>
               <div className="bau-bks-container14">
                 <div className="bau-bks-contact">
-                  <span className="bau-bks-text26">LIÊN HỆ</span>
-                  <span className="bau-bks-text27">cskh@hoasengroup.vn</span>
-                  <span>(028) 39990 111</span>
+                  <span className="bau-bks-text22">LIÊN HỆ</span>
+                  <span className="bau-bks-text23">cskh@hoasengroup.vn</span>
+                  <span className="bau-bks-text24">(028) 39990 111</span>
                 </div>
                 <div className="bau-bks-socials">
-                  <span className="bau-bks-text29">THEO DÕI</span>
+                  <span className="bau-bks-text25">THEO DÕI</span>
                   <div className="bau-bks-icon-group1">
-                    <a
-                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bau-bks-link12"
-                    >
-                      <svg viewBox="0 0 1024 1024" className="bau-bks-icon10">
-                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://zalo.me/2867298229687548991"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bau-bks-link13"
-                    >
-                      <img
-                        alt="image"
-                        src="/playground_assets/icons8-zalo-50-200h.png"
-                        className="bau-bks-image2"
-                      />
-                    </a>
                     <a
                       href="https://www.facebook.com/hoasengroup.vn"
                       target="_blank"
@@ -303,7 +256,7 @@ const BauBKS = (props) => {
                     >
                       <svg
                         viewBox="0 0 602.2582857142856 1024"
-                        className="bau-bks-icon12"
+                        className="bau-bks-icon10"
                       >
                         <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                       </svg>
@@ -317,8 +270,30 @@ const BauBKS = (props) => {
                       <img
                         alt="image"
                         src="/playground_assets/tik-tok-200h.png"
+                        className="bau-bks-image2"
+                      />
+                    </a>
+                    <a
+                      href="https://zalo.me/2867298229687548991"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="bau-bks-link16"
+                    >
+                      <img
+                        alt="image"
+                        src="/playground_assets/icons8-zalo-50-200h.png"
                         className="bau-bks-image3"
                       />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="bau-bks-link17"
+                    >
+                      <svg viewBox="0 0 1024 1024" className="bau-bks-icon12">
+                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -326,7 +301,7 @@ const BauBKS = (props) => {
             </div>
           </div>
           <div className="bau-bks-separator"></div>
-          <span className="bau-bks-text30">
+          <span className="bau-bks-text26">
             © 2023 HOA SEN GROUP, All Rights Reserved.
           </span>
         </footer>
@@ -449,17 +424,21 @@ const BauBKS = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .bau-bks-text {
+          .bau-bks-link05 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bau-bks-text01 {
+          .bau-bks-link06 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bau-bks-text02 {
+          .bau-bks-link07 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bau-bks-text03 {
+          .bau-bks-link08 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
           .bau-bks-container02 {
             flex: 0 0 auto;
@@ -469,8 +448,9 @@ const BauBKS = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .bau-bks-login1 {
+          .bau-bks-link09 {
             margin-right: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
           .bau-bks-icon-group {
             display: flex;
@@ -507,7 +487,7 @@ const BauBKS = (props) => {
             justify-content: center;
           }
           .bau-bks-pricing-card {
-            width: 797px;
+            width: 100%;
             display: flex;
             padding: var(--dl-space-space-twounits);
             max-width: 100%;
@@ -521,7 +501,7 @@ const BauBKS = (props) => {
           .bau-bks-pricing-card:hover {
             transform: scale(1.02);
           }
-          .bau-bks-text04 {
+          .bau-bks-text {
             font-size: 1.5rem;
             align-self: center;
             font-weight: 600;
@@ -543,11 +523,17 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
-          .bau-bks-text05 {
+          .bau-bks-text01 {
+            font-size: 14px;
             margin-left: var(--dl-space-space-halfunit);
           }
-          .bau-bks-text06 {
+          .bau-bks-text02 {
+            font-size: 14px;
             margin-left: var(--dl-space-space-threeunits);
+          }
+          .bau-bks-text03 {
+            font-size: 14px;
+            margin-left: var(--dl-space-space-halfunit);
           }
           .bau-bks-container06 {
             width: 100%;
@@ -563,22 +549,35 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .bau-bks-text04 {
+            font-size: 14px;
+          }
           .bau-bks-form01 {
             width: 200px;
             height: 100%;
             display: flex;
             align-items: center;
+            margin-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-halfunit);
             justify-content: center;
           }
+          .bau-bks-text05 {
+            font-size: 14px;
+          }
           .bau-bks-form02 {
-            width: 200px;
+            width: 139px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-bks-textinput {
-            width: 193px;
+            width: 129px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 0px;
           }
           .bau-bks-container07 {
             width: 100%;
@@ -594,22 +593,35 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .bau-bks-text06 {
+            font-size: 14px;
+          }
           .bau-bks-form04 {
             width: 200px;
             height: 100%;
             display: flex;
             align-items: center;
+            margin-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-halfunit);
             justify-content: center;
           }
+          .bau-bks-text07 {
+            font-size: 14px;
+          }
           .bau-bks-form05 {
-            width: 200px;
+            width: 139px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-bks-textinput1 {
-            width: 193px;
+            width: 129px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 0px;
           }
           .bau-bks-container08 {
             width: 100%;
@@ -625,22 +637,35 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .bau-bks-text08 {
+            font-size: 14px;
+          }
           .bau-bks-form07 {
             width: 200px;
             height: 100%;
             display: flex;
             align-items: center;
+            margin-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-halfunit);
             justify-content: center;
           }
+          .bau-bks-text09 {
+            font-size: 14px;
+          }
           .bau-bks-form08 {
-            width: 200px;
+            width: 139px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-bks-textinput2 {
-            width: 193px;
+            width: 129px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 0px;
           }
           .bau-bks-container09 {
             width: 100%;
@@ -656,22 +681,34 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .bau-bks-text10 {
+            font-size: 14px;
+          }
           .bau-bks-form10 {
             width: 200px;
             height: 100%;
             display: flex;
             align-items: center;
+            margin-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-halfunit);
             justify-content: center;
           }
+          .bau-bks-text11 {
+            font-size: 14px;
+          }
           .bau-bks-form11 {
-            width: 200px;
+            width: 139px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-bks-textinput3 {
-            width: 193px;
+            width: 129px;
+            padding-top: 0px;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 0px;
           }
           .bau-bks-container10 {
             width: 100%;
@@ -687,22 +724,35 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .bau-bks-text12 {
+            font-size: 14px;
+          }
           .bau-bks-form13 {
             width: 200px;
             height: 100%;
             display: flex;
             align-items: center;
+            margin-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-halfunit);
             justify-content: center;
           }
+          .bau-bks-text13 {
+            font-size: 14px;
+          }
           .bau-bks-form14 {
-            width: 200px;
+            width: 139px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-bks-textinput4 {
-            width: 193px;
+            width: 129px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 0px;
           }
           .bau-bks-container11 {
             width: 100%;
@@ -718,22 +768,35 @@ const BauBKS = (props) => {
             align-items: center;
             justify-content: center;
           }
+          .bau-bks-text14 {
+            font-size: 14px;
+          }
           .bau-bks-form16 {
             width: 200px;
             height: 100%;
             display: flex;
             align-items: center;
+            margin-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-halfunit);
             justify-content: center;
           }
+          .bau-bks-text15 {
+            font-size: 14px;
+          }
           .bau-bks-form17 {
-            width: 200px;
+            width: 139px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-bks-textinput5 {
-            width: 193px;
+            width: 129px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-bottom: 0px;
           }
           .bau-bks-button {
             align-self: center;
@@ -743,6 +806,7 @@ const BauBKS = (props) => {
             width: 100%;
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
+            box-shadow: 5px 5px 10px 0px #d4d4d4;
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
             padding-left: var(--dl-space-space-threeunits);
@@ -765,10 +829,10 @@ const BauBKS = (props) => {
             flex-direction: column;
           }
           .bau-bks-image1 {
-            width: 84px;
-            height: 84px;
+            width: 121px;
+            height: 121px;
           }
-          .bau-bks-text20 {
+          .bau-bks-text16 {
             margin-top: var(--dl-space-space-oneandhalfunits);
           }
           .bau-bks-links-container {
@@ -792,23 +856,27 @@ const BauBKS = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-bks-text24 {
+          .bau-bks-text17 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .bau-bks-link05 {
+          .bau-bks-link10 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-bks-link06 {
+          .bau-bks-link11 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-bks-link07 {
+          .bau-bks-link12 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-bks-link08 {
+          .bau-bks-link13 {
+            font-size: 14px;
             text-decoration: none;
           }
           .bau-bks-company-container {
@@ -818,21 +886,21 @@ const BauBKS = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-bks-text25 {
+          .bau-bks-text18 {
             font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .bau-bks-link09 {
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .bau-bks-link10 {
+          .bau-bks-text19 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .bau-bks-link11 {
+          .bau-bks-text20 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
+          }
+          .bau-bks-text21 {
+            font-size: 14px;
+            margin-bottom: var(--dl-space-space-unit);
           }
           .bau-bks-container14 {
             display: flex;
@@ -847,12 +915,16 @@ const BauBKS = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-bks-text26 {
+          .bau-bks-text22 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .bau-bks-text27 {
+          .bau-bks-text23 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
+          }
+          .bau-bks-text24 {
+            font-size: 14px;
           }
           .bau-bks-socials {
             display: flex;
@@ -860,7 +932,7 @@ const BauBKS = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-bks-text29 {
+          .bau-bks-text25 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
@@ -870,7 +942,7 @@ const BauBKS = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .bau-bks-link12 {
+          .bau-bks-link14 {
             display: contents;
           }
           .bau-bks-icon10 {
@@ -879,7 +951,7 @@ const BauBKS = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-bks-link13 {
+          .bau-bks-link15 {
             display: contents;
           }
           .bau-bks-image2 {
@@ -889,22 +961,22 @@ const BauBKS = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-bks-link14 {
-            display: contents;
-          }
-          .bau-bks-icon12 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-unit);
-            text-decoration: none;
-          }
-          .bau-bks-link15 {
+          .bau-bks-link16 {
             display: contents;
           }
           .bau-bks-image3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
             object-fit: cover;
+            margin-right: var(--dl-space-space-unit);
+            text-decoration: none;
+          }
+          .bau-bks-link17 {
+            display: contents;
+          }
+          .bau-bks-icon12 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
             text-decoration: none;
           }
           .bau-bks-separator {
@@ -914,7 +986,7 @@ const BauBKS = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-900);
           }
-          .bau-bks-text30 {
+          .bau-bks-text26 {
             align-self: center;
           }
           @media (max-width: 1200px) {
@@ -1006,7 +1078,7 @@ const BauBKS = (props) => {
             .bau-bks-image1 {
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .bau-bks-text20 {
+            .bau-bks-text16 {
               margin-top: var(--dl-space-space-twounits);
               text-align: center;
               margin-bottom: var(--dl-space-space-twounits);
@@ -1053,7 +1125,7 @@ const BauBKS = (props) => {
             .bau-bks-image1 {
               margin-bottom: 0px;
             }
-            .bau-bks-text20 {
+            .bau-bks-text16 {
               margin-top: var(--dl-space-space-twounits);
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -1073,7 +1145,7 @@ const BauBKS = (props) => {
               align-items: flex-start;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .bau-bks-text30 {
+            .bau-bks-text26 {
               text-align: center;
             }
           }

@@ -20,13 +20,13 @@ const BieuQuyet = (props) => {
             height={105}
           />
           <div
-            data-role="Nav"
             data-thq="thq-navbar-nav"
+            data-role="Nav"
             className="bieu-quyet-desktop-menu"
           >
             <nav
-              data-role="Nav"
               data-thq="thq-navbar-nav-links"
+              data-role="Nav"
               className="bieu-quyet-nav"
             >
               <Link href="/bau-hdqt">
@@ -55,8 +55,8 @@ const BieuQuyet = (props) => {
           </div>
           <div data-thq="thq-mobile-menu" className="bieu-quyet-mobile-menu">
             <div
-              data-role="Nav"
               data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
               className="bieu-quyet-nav1"
             >
               <div className="bieu-quyet-container01">
@@ -75,17 +75,27 @@ const BieuQuyet = (props) => {
                 </div>
               </div>
               <nav
-                data-role="Nav"
                 data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
                 className="bieu-quyet-nav2"
               >
-                <span className="bieu-quyet-text">Bầu HĐQT</span>
-                <span className="bieu-quyet-text01">Bầu BKS</span>
-                <span className="bieu-quyet-text02">Biểu Quyết</span>
-                <span className="bieu-quyet-text03">Kết Quả</span>
+                <Link href="/bau-hdqt">
+                  <a className="bieu-quyet-link05">Bầu HĐQT</a>
+                </Link>
+                <Link href="/bau-bks">
+                  <a className="bieu-quyet-link06">Bầu BKS</a>
+                </Link>
+                <Link href="/bieu-quyet">
+                  <a className="bieu-quyet-link07">Biểu Quyết</a>
+                </Link>
+                <Link href="/ket-qua">
+                  <a className="bieu-quyet-link08">Kết Quả</a>
+                </Link>
               </nav>
               <div className="bieu-quyet-container02">
-                <button className="bieu-quyet-login1 button">Đăng Nhập</button>
+                <Link href="/logn">
+                  <a className="bieu-quyet-link09 button">Đăng Nhập</a>
+                </Link>
               </div>
             </div>
             <div className="bieu-quyet-icon-group">
@@ -113,7 +123,7 @@ const BieuQuyet = (props) => {
         <div className="bieu-quyet-pricing">
           <div className="bieu-quyet-container03">
             <div className="bieu-quyet-pricing-card">
-              <span className="bieu-quyet-text04">BIỂU QUYẾT</span>
+              <span className="bieu-quyet-text">BIỂU QUYẾT</span>
               <div className="bieu-quyet-container04">
                 <div className="bieu-quyet-container05">
                   <form className="bieu-quyet-form">
@@ -126,15 +136,15 @@ const BieuQuyet = (props) => {
                 <div className="bieu-quyet-container06">
                   <form className="bieu-quyet-form02">
                     <input type="checkbox" checked="true" />
-                    <label className="bieu-quyet-text07">Đồngý</label>
+                    <label className="bieu-quyet-text03">Đồngý</label>
                   </form>
                   <form className="bieu-quyet-form03">
                     <input type="checkbox" checked="true" />
-                    <label className="bieu-quyet-text08">Không Đồng ý</label>
+                    <label className="bieu-quyet-text04">Không Đồng ý</label>
                   </form>
                   <form className="bieu-quyet-form04">
                     <input type="checkbox" checked="true" />
-                    <label className="bieu-quyet-text09">Không ý kiến</label>
+                    <label className="bieu-quyet-text05">Không ý kiến</label>
                   </form>
                 </div>
                 <div className="bieu-quyet-container07">
@@ -148,15 +158,15 @@ const BieuQuyet = (props) => {
                 <div className="bieu-quyet-container08">
                   <form className="bieu-quyet-form07">
                     <input type="checkbox" checked="true" />
-                    <label className="bieu-quyet-text12">Đồngý</label>
+                    <label className="bieu-quyet-text08">Đồngý</label>
                   </form>
                   <form className="bieu-quyet-form08">
                     <input type="checkbox" checked="true" />
-                    <label className="bieu-quyet-text13">Không Đồng ý</label>
+                    <label className="bieu-quyet-text09">Không Đồng ý</label>
                   </form>
                   <form className="bieu-quyet-form09">
                     <input type="checkbox" checked="true" />
-                    <label className="bieu-quyet-text14">Không ý kiến</label>
+                    <label className="bieu-quyet-text10">Không ý kiến</label>
                   </form>
                 </div>
               </div>
@@ -173,106 +183,46 @@ const BieuQuyet = (props) => {
                 alt="logo"
                 src="/playground_assets/logo-hsg-200h.png"
                 className="bieu-quyet-image1"
-                width={84}
-                height={84}
+                width={121}
+                height={121}
               />
-              <span className="bieu-quyet-text15">
-                <span>Công ty cổ phần Tập Đoàn Hoa Sen</span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
+              <span className="bieu-quyet-text11">
+                Công ty cổ phần Tập đoàn Hoa Sen
               </span>
             </div>
             <div className="bieu-quyet-links-container">
               <div className="bieu-quyet-container10">
                 <div className="bieu-quyet-product-container">
-                  <span className="bieu-quyet-text19">TRANG</span>
+                  <span className="bieu-quyet-text12">TRANG</span>
                   <Link href="/bau-hdqt">
-                    <a className="bieu-quyet-link05">Bầu HĐQT</a>
+                    <a className="bieu-quyet-link10">Bầu HĐQT</a>
                   </Link>
                   <Link href="/bau-bks">
-                    <a className="bieu-quyet-link06">Bầu BKS</a>
+                    <a className="bieu-quyet-link11">Bầu BKS</a>
                   </Link>
                   <Link href="/bieu-quyet">
-                    <a className="bieu-quyet-link07">Biểu quyết</a>
+                    <a className="bieu-quyet-link12">Biểu quyết</a>
                   </Link>
                   <Link href="/ket-qua">
-                    <a className="bieu-quyet-link08">Kết quả</a>
+                    <a className="bieu-quyet-link13">Kết quả</a>
                   </Link>
                 </div>
                 <div className="bieu-quyet-company-container">
-                  <span className="bieu-quyet-text20">LIÊN KẾT</span>
-                  <a
-                    href="https://nhuahoasen.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bieu-quyet-link09"
-                  >
-                    Nhựa hoa sen
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bieu-quyet-link10"
-                  >
-                    Việt Nam Steel
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bieu-quyet-link11"
-                  >
-                    Hoa sen Home
-                  </a>
+                  <span className="bieu-quyet-text13">LIÊN KẾT</span>
+                  <span className="bieu-quyet-text14">Nhựa Hoa Sen</span>
+                  <span className="bieu-quyet-text15">Việt Nam Steel</span>
+                  <span className="bieu-quyet-text16">Hoa Sen Home</span>
                 </div>
               </div>
               <div className="bieu-quyet-container11">
                 <div className="bieu-quyet-contact">
-                  <span className="bieu-quyet-text21">LIÊN HỆ</span>
-                  <span className="bieu-quyet-text22">cskh@hoasengroup.vn</span>
-                  <span>(028) 39990 111</span>
+                  <span className="bieu-quyet-text17">LIÊN HỆ</span>
+                  <span className="bieu-quyet-text18">cskh@hoasengroup.vn</span>
+                  <span className="bieu-quyet-text19">(028) 39990 111</span>
                 </div>
                 <div className="bieu-quyet-socials">
-                  <span className="bieu-quyet-text24">THEO DÕI</span>
+                  <span className="bieu-quyet-text20">THEO DÕI</span>
                   <div className="bieu-quyet-icon-group1">
-                    <a
-                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bieu-quyet-link12"
-                    >
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        className="bieu-quyet-icon10"
-                      >
-                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://zalo.me/2867298229687548991"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bieu-quyet-link13"
-                    >
-                      <img
-                        alt="image"
-                        src="/playground_assets/icons8-zalo-50-200h.png"
-                        className="bieu-quyet-image2"
-                      />
-                    </a>
                     <a
                       href="https://www.facebook.com/hoasengroup.vn"
                       target="_blank"
@@ -281,7 +231,7 @@ const BieuQuyet = (props) => {
                     >
                       <svg
                         viewBox="0 0 602.2582857142856 1024"
-                        className="bieu-quyet-icon12"
+                        className="bieu-quyet-icon10"
                       >
                         <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                       </svg>
@@ -295,8 +245,33 @@ const BieuQuyet = (props) => {
                       <img
                         alt="image"
                         src="/playground_assets/tik-tok-200h.png"
+                        className="bieu-quyet-image2"
+                      />
+                    </a>
+                    <a
+                      href="https://zalo.me/2867298229687548991"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="bieu-quyet-link16"
+                    >
+                      <img
+                        alt="image"
+                        src="/playground_assets/icons8-zalo-50-200h.png"
                         className="bieu-quyet-image3"
                       />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="bieu-quyet-link17"
+                    >
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        className="bieu-quyet-icon12"
+                      >
+                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -304,7 +279,7 @@ const BieuQuyet = (props) => {
             </div>
           </div>
           <div className="bieu-quyet-separator"></div>
-          <span className="bieu-quyet-text25">
+          <span className="bieu-quyet-text21">
             © 2023 HOA SEN GROUP, All Rights Reserved.
           </span>
         </footer>
@@ -427,17 +402,21 @@ const BieuQuyet = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .bieu-quyet-text {
+          .bieu-quyet-link05 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bieu-quyet-text01 {
+          .bieu-quyet-link06 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bieu-quyet-text02 {
+          .bieu-quyet-link07 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bieu-quyet-text03 {
+          .bieu-quyet-link08 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
           .bieu-quyet-container02 {
             flex: 0 0 auto;
@@ -447,8 +426,9 @@ const BieuQuyet = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .bieu-quyet-login1 {
+          .bieu-quyet-link09 {
             margin-right: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
           .bieu-quyet-icon-group {
             display: flex;
@@ -485,7 +465,7 @@ const BieuQuyet = (props) => {
             justify-content: center;
           }
           .bieu-quyet-pricing-card {
-            width: 797px;
+            width: 100%;
             display: flex;
             padding: var(--dl-space-space-twounits);
             max-width: 100%;
@@ -499,7 +479,7 @@ const BieuQuyet = (props) => {
           .bieu-quyet-pricing-card:hover {
             transform: scale(1.02);
           }
-          .bieu-quyet-text04 {
+          .bieu-quyet-text {
             font-size: 1.5rem;
             align-self: center;
             font-weight: 600;
@@ -549,7 +529,7 @@ const BieuQuyet = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .bieu-quyet-text07 {
+          .bieu-quyet-text03 {
             margin-left: var(--dl-space-space-unit);
           }
           .bieu-quyet-form03 {
@@ -559,7 +539,7 @@ const BieuQuyet = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .bieu-quyet-text08 {
+          .bieu-quyet-text04 {
             margin-left: var(--dl-space-space-unit);
           }
           .bieu-quyet-form04 {
@@ -569,7 +549,7 @@ const BieuQuyet = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .bieu-quyet-text09 {
+          .bieu-quyet-text05 {
             margin-left: var(--dl-space-space-unit);
           }
           .bieu-quyet-container07 {
@@ -607,7 +587,7 @@ const BieuQuyet = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .bieu-quyet-text12 {
+          .bieu-quyet-text08 {
             margin-left: var(--dl-space-space-unit);
           }
           .bieu-quyet-form08 {
@@ -617,7 +597,7 @@ const BieuQuyet = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .bieu-quyet-text13 {
+          .bieu-quyet-text09 {
             margin-left: var(--dl-space-space-unit);
           }
           .bieu-quyet-form09 {
@@ -627,7 +607,7 @@ const BieuQuyet = (props) => {
             align-items: center;
             justify-content: flex-start;
           }
-          .bieu-quyet-text14 {
+          .bieu-quyet-text10 {
             margin-left: var(--dl-space-space-unit);
           }
           .bieu-quyet-button {
@@ -638,6 +618,7 @@ const BieuQuyet = (props) => {
             width: 100%;
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
+            box-shadow: 5px 5px 10px 0px #d4d4d4;
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
             padding-left: var(--dl-space-space-threeunits);
@@ -660,10 +641,10 @@ const BieuQuyet = (props) => {
             flex-direction: column;
           }
           .bieu-quyet-image1 {
-            width: 84px;
-            height: 84px;
+            width: 121px;
+            height: 121px;
           }
-          .bieu-quyet-text15 {
+          .bieu-quyet-text11 {
             margin-top: var(--dl-space-space-oneandhalfunits);
           }
           .bieu-quyet-links-container {
@@ -687,23 +668,27 @@ const BieuQuyet = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bieu-quyet-text19 {
+          .bieu-quyet-text12 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .bieu-quyet-link05 {
+          .bieu-quyet-link10 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bieu-quyet-link06 {
+          .bieu-quyet-link11 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bieu-quyet-link07 {
+          .bieu-quyet-link12 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bieu-quyet-link08 {
+          .bieu-quyet-link13 {
+            font-size: 14px;
             text-decoration: none;
           }
           .bieu-quyet-company-container {
@@ -713,21 +698,21 @@ const BieuQuyet = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bieu-quyet-text20 {
+          .bieu-quyet-text13 {
             font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .bieu-quyet-link09 {
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .bieu-quyet-link10 {
+          .bieu-quyet-text14 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .bieu-quyet-link11 {
+          .bieu-quyet-text15 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
+          }
+          .bieu-quyet-text16 {
+            font-size: 14px;
+            margin-bottom: var(--dl-space-space-unit);
           }
           .bieu-quyet-container11 {
             display: flex;
@@ -742,12 +727,16 @@ const BieuQuyet = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bieu-quyet-text21 {
+          .bieu-quyet-text17 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .bieu-quyet-text22 {
+          .bieu-quyet-text18 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
+          }
+          .bieu-quyet-text19 {
+            font-size: 14px;
           }
           .bieu-quyet-socials {
             display: flex;
@@ -755,7 +744,7 @@ const BieuQuyet = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bieu-quyet-text24 {
+          .bieu-quyet-text20 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
@@ -765,7 +754,7 @@ const BieuQuyet = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .bieu-quyet-link12 {
+          .bieu-quyet-link14 {
             display: contents;
           }
           .bieu-quyet-icon10 {
@@ -774,7 +763,7 @@ const BieuQuyet = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bieu-quyet-link13 {
+          .bieu-quyet-link15 {
             display: contents;
           }
           .bieu-quyet-image2 {
@@ -784,22 +773,22 @@ const BieuQuyet = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bieu-quyet-link14 {
-            display: contents;
-          }
-          .bieu-quyet-icon12 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-unit);
-            text-decoration: none;
-          }
-          .bieu-quyet-link15 {
+          .bieu-quyet-link16 {
             display: contents;
           }
           .bieu-quyet-image3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
             object-fit: cover;
+            margin-right: var(--dl-space-space-unit);
+            text-decoration: none;
+          }
+          .bieu-quyet-link17 {
+            display: contents;
+          }
+          .bieu-quyet-icon12 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
             text-decoration: none;
           }
           .bieu-quyet-separator {
@@ -809,7 +798,7 @@ const BieuQuyet = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-900);
           }
-          .bieu-quyet-text25 {
+          .bieu-quyet-text21 {
             align-self: center;
           }
           @media (max-width: 1200px) {
@@ -892,7 +881,7 @@ const BieuQuyet = (props) => {
             .bieu-quyet-image1 {
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .bieu-quyet-text15 {
+            .bieu-quyet-text11 {
               margin-top: var(--dl-space-space-twounits);
               text-align: center;
               margin-bottom: var(--dl-space-space-twounits);
@@ -936,7 +925,7 @@ const BieuQuyet = (props) => {
             .bieu-quyet-image1 {
               margin-bottom: 0px;
             }
-            .bieu-quyet-text15 {
+            .bieu-quyet-text11 {
               margin-top: var(--dl-space-space-twounits);
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -956,7 +945,7 @@ const BieuQuyet = (props) => {
               align-items: flex-start;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .bieu-quyet-text25 {
+            .bieu-quyet-text21 {
               text-align: center;
             }
           }

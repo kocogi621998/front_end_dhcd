@@ -20,13 +20,13 @@ const BauHDQT = (props) => {
             height={105}
           />
           <div
-            data-role="Nav"
             data-thq="thq-navbar-nav"
+            data-role="Nav"
             className="bau-hdqt-desktop-menu"
           >
             <nav
-              data-role="Nav"
               data-thq="thq-navbar-nav-links"
+              data-role="Nav"
               className="bau-hdqt-nav"
             >
               <Link href="/bau-hdqt">
@@ -55,8 +55,8 @@ const BauHDQT = (props) => {
           </div>
           <div data-thq="thq-mobile-menu" className="bau-hdqt-mobile-menu">
             <div
-              data-role="Nav"
               data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
               className="bau-hdqt-nav1"
             >
               <div className="bau-hdqt-container01">
@@ -72,17 +72,27 @@ const BauHDQT = (props) => {
                 </div>
               </div>
               <nav
-                data-role="Nav"
                 data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
                 className="bau-hdqt-nav2"
               >
-                <span className="bau-hdqt-text">Bầu HĐQT</span>
-                <span className="bau-hdqt-text01">Bầu BKS</span>
-                <span className="bau-hdqt-text02">Biểu Quyết</span>
-                <span className="bau-hdqt-text03">Kết Quả</span>
+                <Link href="/bau-hdqt">
+                  <a className="bau-hdqt-link05">Bầu HĐQT</a>
+                </Link>
+                <Link href="/bau-bks">
+                  <a className="bau-hdqt-link06">Bầu BKS</a>
+                </Link>
+                <Link href="/bieu-quyet">
+                  <a className="bau-hdqt-link07">Biểu Quyết</a>
+                </Link>
+                <Link href="/ket-qua">
+                  <a className="bau-hdqt-link08">Kết Quả</a>
+                </Link>
               </nav>
               <div className="bau-hdqt-container02">
-                <button className="bau-hdqt-login1 button">Đăng Nhập</button>
+                <Link href="/logn">
+                  <a className="bau-hdqt-link09 button">Đăng Nhập</a>
+                </Link>
               </div>
             </div>
             <div className="bau-hdqt-icon-group">
@@ -110,13 +120,13 @@ const BauHDQT = (props) => {
         <div className="bau-hdqt-pricing">
           <div className="bau-hdqt-container03">
             <div className="bau-hdqt-pricing-card">
-              <span className="bau-hdqt-text04">BẦU BAN KIỂM SOÁT</span>
+              <span className="bau-hdqt-text">BẦU BAN KIỂM SOÁT</span>
               <div className="bau-hdqt-container04">
                 <div className="bau-hdqt-container05">
                   <input type="checkbox" checked="true" />
-                  <label className="bau-hdqt-text05">Chia đều</label>
-                  <label className="bau-hdqt-text06">Số cổ phần:</label>
-                  <span>0</span>
+                  <label className="bau-hdqt-text01">Chia đều</label>
+                  <label className="bau-hdqt-text02">Số cổ phần:</label>
+                  <span className="bau-hdqt-text03">0</span>
                 </div>
                 <div className="bau-hdqt-container06">
                   <form className="bau-hdqt-form">
@@ -165,103 +175,46 @@ const BauHDQT = (props) => {
                 alt="logo"
                 src="/playground_assets/logo-hsg-200h.png"
                 className="bau-hdqt-image1"
-                width={84}
-                height={84}
+                width={121}
+                height={121}
               />
-              <span className="bau-hdqt-text14">
-                <span>Công ty cổ phần Tập Đoàn Hoa Sen</span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
+              <span className="bau-hdqt-text10">
+                Công ty cổ phần Tập đoàn Hoa Sen
               </span>
             </div>
             <div className="bau-hdqt-links-container">
               <div className="bau-hdqt-container10">
                 <div className="bau-hdqt-product-container">
-                  <span className="bau-hdqt-text18">TRANG</span>
+                  <span className="bau-hdqt-text11">TRANG</span>
                   <Link href="/bau-hdqt">
-                    <a className="bau-hdqt-link05">Bầu HĐQT</a>
+                    <a className="bau-hdqt-link10">Bầu HĐQT</a>
                   </Link>
                   <Link href="/bau-bks">
-                    <a className="bau-hdqt-link06">Bầu BKS</a>
+                    <a className="bau-hdqt-link11">Bầu BKS</a>
                   </Link>
                   <Link href="/bieu-quyet">
-                    <a className="bau-hdqt-link07">Biểu quyết</a>
+                    <a className="bau-hdqt-link12">Biểu quyết</a>
                   </Link>
                   <Link href="/ket-qua">
-                    <a className="bau-hdqt-link08">Kết quả</a>
+                    <a className="bau-hdqt-link13">Kết quả</a>
                   </Link>
                 </div>
                 <div className="bau-hdqt-company-container">
-                  <span className="bau-hdqt-text19">LIÊN KẾT</span>
-                  <a
-                    href="https://nhuahoasen.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bau-hdqt-link09"
-                  >
-                    Nhựa hoa sen
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bau-hdqt-link10"
-                  >
-                    Việt Nam Steel
-                  </a>
-                  <a
-                    href="https://hoasenhome.vn/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="bau-hdqt-link11"
-                  >
-                    Hoa sen Home
-                  </a>
+                  <span className="bau-hdqt-text12">LIÊN KẾT</span>
+                  <span className="bau-hdqt-text13">Nhựa Hoa Sen</span>
+                  <span className="bau-hdqt-text14">Việt Nam Steel</span>
+                  <span className="bau-hdqt-text15">Hoa Sen Home</span>
                 </div>
               </div>
               <div className="bau-hdqt-container11">
                 <div className="bau-hdqt-contact">
-                  <span className="bau-hdqt-text20">LIÊN HỆ</span>
-                  <span className="bau-hdqt-text21">cskh@hoasengroup.vn</span>
-                  <span>(028) 39990 111</span>
+                  <span className="bau-hdqt-text16">LIÊN HỆ</span>
+                  <span className="bau-hdqt-text17">cskh@hoasengroup.vn</span>
+                  <span className="bau-hdqt-text18">(028) 39990 111</span>
                 </div>
                 <div className="bau-hdqt-socials">
-                  <span className="bau-hdqt-text23">THEO DÕI</span>
+                  <span className="bau-hdqt-text19">THEO DÕI</span>
                   <div className="bau-hdqt-icon-group1">
-                    <a
-                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bau-hdqt-link12"
-                    >
-                      <svg viewBox="0 0 1024 1024" className="bau-hdqt-icon10">
-                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
-                      </svg>
-                    </a>
-                    <a
-                      href="https://zalo.me/2867298229687548991"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="bau-hdqt-link13"
-                    >
-                      <img
-                        alt="image"
-                        src="/playground_assets/icons8-zalo-50-200h.png"
-                        className="bau-hdqt-image2"
-                      />
-                    </a>
                     <a
                       href="https://www.facebook.com/hoasengroup.vn"
                       target="_blank"
@@ -270,7 +223,7 @@ const BauHDQT = (props) => {
                     >
                       <svg
                         viewBox="0 0 602.2582857142856 1024"
-                        className="bau-hdqt-icon12"
+                        className="bau-hdqt-icon10"
                       >
                         <path d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"></path>
                       </svg>
@@ -284,8 +237,30 @@ const BauHDQT = (props) => {
                       <img
                         alt="image"
                         src="/playground_assets/tik-tok-200h.png"
+                        className="bau-hdqt-image2"
+                      />
+                    </a>
+                    <a
+                      href="https://zalo.me/2867298229687548991"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="bau-hdqt-link16"
+                    >
+                      <img
+                        alt="image"
+                        src="/playground_assets/icons8-zalo-50-200h.png"
                         className="bau-hdqt-image3"
                       />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@CongtyCPTapdoanHoaSen"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="bau-hdqt-link17"
+                    >
+                      <svg viewBox="0 0 1024 1024" className="bau-hdqt-icon12">
+                        <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
+                      </svg>
                     </a>
                   </div>
                 </div>
@@ -293,7 +268,7 @@ const BauHDQT = (props) => {
             </div>
           </div>
           <div className="bau-hdqt-separator"></div>
-          <span className="bau-hdqt-text24">
+          <span className="bau-hdqt-text20">
             © 2023 HOA SEN GROUP, All Rights Reserved.
           </span>
         </footer>
@@ -416,17 +391,21 @@ const BauHDQT = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .bau-hdqt-text {
+          .bau-hdqt-link05 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bau-hdqt-text01 {
+          .bau-hdqt-link06 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bau-hdqt-text02 {
+          .bau-hdqt-link07 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
-          .bau-hdqt-text03 {
+          .bau-hdqt-link08 {
             margin-bottom: var(--dl-space-space-unit);
+            text-decoration: none;
           }
           .bau-hdqt-container02 {
             flex: 0 0 auto;
@@ -436,8 +415,9 @@ const BauHDQT = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .bau-hdqt-login1 {
+          .bau-hdqt-link09 {
             margin-right: var(--dl-space-space-twounits);
+            text-decoration: none;
           }
           .bau-hdqt-icon-group {
             display: flex;
@@ -474,7 +454,7 @@ const BauHDQT = (props) => {
             justify-content: center;
           }
           .bau-hdqt-pricing-card {
-            width: 797px;
+            width: 100%;
             display: flex;
             padding: var(--dl-space-space-twounits);
             max-width: 100%;
@@ -488,7 +468,7 @@ const BauHDQT = (props) => {
           .bau-hdqt-pricing-card:hover {
             transform: scale(1.02);
           }
-          .bau-hdqt-text04 {
+          .bau-hdqt-text {
             font-size: 1.5rem;
             align-self: center;
             font-weight: 600;
@@ -510,11 +490,14 @@ const BauHDQT = (props) => {
             align-items: center;
             justify-content: center;
           }
-          .bau-hdqt-text05 {
+          .bau-hdqt-text01 {
             margin-left: var(--dl-space-space-halfunit);
           }
-          .bau-hdqt-text06 {
+          .bau-hdqt-text02 {
             margin-left: var(--dl-space-space-threeunits);
+          }
+          .bau-hdqt-text03 {
+            margin-left: var(--dl-space-space-halfunit);
           }
           .bau-hdqt-container06 {
             width: 100%;
@@ -538,14 +521,19 @@ const BauHDQT = (props) => {
             justify-content: center;
           }
           .bau-hdqt-form2 {
-            width: 200px;
+            width: 144px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-hdqt-textinput {
-            width: 193px;
+            width: 138px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
           }
           .bau-hdqt-container07 {
             width: 100%;
@@ -569,14 +557,19 @@ const BauHDQT = (props) => {
             justify-content: center;
           }
           .bau-hdqt-form5 {
-            width: 200px;
+            width: 144px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-hdqt-textinput1 {
-            width: 193px;
+            width: 138px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
           }
           .bau-hdqt-container08 {
             width: 100%;
@@ -600,14 +593,19 @@ const BauHDQT = (props) => {
             justify-content: center;
           }
           .bau-hdqt-form8 {
-            width: 200px;
+            width: 144px;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
           }
           .bau-hdqt-textinput2 {
-            width: 193px;
+            width: 138px;
+            height: 30px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
           }
           .bau-hdqt-button {
             align-self: center;
@@ -617,6 +615,7 @@ const BauHDQT = (props) => {
             width: 100%;
             display: flex;
             max-width: var(--dl-size-size-maxwidth);
+            box-shadow: 5px 5px 10px 0px #d4d4d4;
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
             padding-left: var(--dl-space-space-threeunits);
@@ -639,10 +638,10 @@ const BauHDQT = (props) => {
             flex-direction: column;
           }
           .bau-hdqt-image1 {
-            width: 84px;
-            height: 84px;
+            width: 121px;
+            height: 121px;
           }
-          .bau-hdqt-text14 {
+          .bau-hdqt-text10 {
             margin-top: var(--dl-space-space-oneandhalfunits);
           }
           .bau-hdqt-links-container {
@@ -666,23 +665,27 @@ const BauHDQT = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-hdqt-text18 {
+          .bau-hdqt-text11 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .bau-hdqt-link05 {
+          .bau-hdqt-link10 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-hdqt-link06 {
+          .bau-hdqt-link11 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-hdqt-link07 {
+          .bau-hdqt-link12 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-hdqt-link08 {
+          .bau-hdqt-link13 {
+            font-size: 14px;
             text-decoration: none;
           }
           .bau-hdqt-company-container {
@@ -692,21 +695,21 @@ const BauHDQT = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-hdqt-text19 {
+          .bau-hdqt-text12 {
             font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .bau-hdqt-link09 {
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .bau-hdqt-link10 {
+          .bau-hdqt-text13 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
           }
-          .bau-hdqt-link11 {
+          .bau-hdqt-text14 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
-            text-decoration: none;
+          }
+          .bau-hdqt-text15 {
+            font-size: 14px;
+            margin-bottom: var(--dl-space-space-unit);
           }
           .bau-hdqt-container11 {
             display: flex;
@@ -721,12 +724,16 @@ const BauHDQT = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-hdqt-text20 {
+          .bau-hdqt-text16 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .bau-hdqt-text21 {
+          .bau-hdqt-text17 {
+            font-size: 14px;
             margin-bottom: var(--dl-space-space-unit);
+          }
+          .bau-hdqt-text18 {
+            font-size: 14px;
           }
           .bau-hdqt-socials {
             display: flex;
@@ -734,7 +741,7 @@ const BauHDQT = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .bau-hdqt-text23 {
+          .bau-hdqt-text19 {
             font-weight: 700;
             margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
@@ -744,7 +751,7 @@ const BauHDQT = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .bau-hdqt-link12 {
+          .bau-hdqt-link14 {
             display: contents;
           }
           .bau-hdqt-icon10 {
@@ -753,7 +760,7 @@ const BauHDQT = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-hdqt-link13 {
+          .bau-hdqt-link15 {
             display: contents;
           }
           .bau-hdqt-image2 {
@@ -763,22 +770,22 @@ const BauHDQT = (props) => {
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .bau-hdqt-link14 {
-            display: contents;
-          }
-          .bau-hdqt-icon12 {
-            width: var(--dl-size-size-xsmall);
-            height: var(--dl-size-size-xsmall);
-            margin-right: var(--dl-space-space-unit);
-            text-decoration: none;
-          }
-          .bau-hdqt-link15 {
+          .bau-hdqt-link16 {
             display: contents;
           }
           .bau-hdqt-image3 {
             width: var(--dl-size-size-xsmall);
             height: var(--dl-size-size-xsmall);
             object-fit: cover;
+            margin-right: var(--dl-space-space-unit);
+            text-decoration: none;
+          }
+          .bau-hdqt-link17 {
+            display: contents;
+          }
+          .bau-hdqt-icon12 {
+            width: var(--dl-size-size-xsmall);
+            height: var(--dl-size-size-xsmall);
             text-decoration: none;
           }
           .bau-hdqt-separator {
@@ -788,7 +795,7 @@ const BauHDQT = (props) => {
             margin-bottom: var(--dl-space-space-twounits);
             background-color: var(--dl-color-gray-900);
           }
-          .bau-hdqt-text24 {
+          .bau-hdqt-text20 {
             align-self: center;
           }
           @media (max-width: 1200px) {
@@ -871,7 +878,7 @@ const BauHDQT = (props) => {
             .bau-hdqt-image1 {
               margin-bottom: var(--dl-space-space-oneandhalfunits);
             }
-            .bau-hdqt-text14 {
+            .bau-hdqt-text10 {
               margin-top: var(--dl-space-space-twounits);
               text-align: center;
               margin-bottom: var(--dl-space-space-twounits);
@@ -918,7 +925,7 @@ const BauHDQT = (props) => {
             .bau-hdqt-image1 {
               margin-bottom: 0px;
             }
-            .bau-hdqt-text14 {
+            .bau-hdqt-text10 {
               margin-top: var(--dl-space-space-twounits);
               margin-bottom: var(--dl-space-space-twounits);
             }
@@ -938,7 +945,7 @@ const BauHDQT = (props) => {
               align-items: flex-start;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .bau-hdqt-text24 {
+            .bau-hdqt-text20 {
               text-align: center;
             }
           }
